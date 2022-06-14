@@ -443,7 +443,7 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
   margin-top: -26px;
   background: url(../images/jong.png) no-repeat center center;
   background-size: 53px 53px;
-  animation: bell 3s linear infinite;
+  animation: bell 2s linear infinite;
 }
 @keyframes bell {
   0%, 50% {
