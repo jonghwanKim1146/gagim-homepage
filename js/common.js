@@ -81,7 +81,7 @@ let GAGIM = (function() {
         ttl.to('#bag', {duration: 0.5, autoAlpha: 1, scale:1.2, display: 'block', ease: 'Back.easeOut', delay: -1});
         ttl.to('#movBox', {duration: 1, autoAlpha: 0, ease: 'ease', delay: 3});
         ttl.to('#yellowShadow', {duration: 0.3, autoAlpha:1, scale: 1, ease: 'Back.easeOut', delay: 1});
-        ttl.to('#bag', {duration: 0.5, x: 30, y: -80, scale:0.7, ease: 'ease', delay: -0.7});
+        ttl.to('#bag', {duration: 0.5, x: 30, y: -50, scale:0.7, ease: 'ease', delay: -0.7});
         ttl.to('#camera', {duration: 0.5, autoAlpha:1, ease: 'ease', delay: 0});
         ttl.to('#focus', {duration: 0.5, autoAlpha:1, scale: 1, ease: 'Back.easeOut', delay: 0});
         ttl.to('#cameraBag', {duration: 3, autoAlpha:1, ease: 'ease', delay: 0});
@@ -90,8 +90,8 @@ let GAGIM = (function() {
         ttl.to('#cameraBox', {duration: 0.5, autoAlpha:0, ease: 'ease', delay: -0.5});
 
 
-        ctl.to('#cBox', {height: '0', duration: 1, delay: 0}); //임시
-        ctl.to('#cBox', {height: '55%', duration: 0.5, delay: 11}); //임시
+        // ctl.to('#cBox', {height: '0', duration: 1, delay: 0}); //임시
+        ctl.to('#cBox', {height: '55%', duration: 0.5, delay: 13});
         ctl.to('#moneyShadow', {duration: 0.5, autoAlpha:1, scale: 1, ease: 'Back.easeOut', delay: 0});
         ctl.to('#bicMoney', {duration: 0.5, autoAlpha:1, y: 0, ease: 'Back.easeOut', delay: -0.3});
         ctl.to('#btnStep03', {duration: 0.5, alpha: 1, display:'flex', ease: 'ease', delay: 0});
