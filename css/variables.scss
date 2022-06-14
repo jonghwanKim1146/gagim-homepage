@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* variables */
+@use "sass:math";
+
+$font-size:         16px;
+
+$evm-primary: 		#FFCC00 !default;
+$evm-secondary:     #2E2E2E !default;
+
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+  @return $number;
+}
+@function vw($px){
+  @return unquote(calc(strip-unit($px) * 100 / 428) + 'vw');
+}
+@function per($px){
+  @return unquote(calc(strip-unit($px) * 100 / 700) + '%');
+}
