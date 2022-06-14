@@ -66,8 +66,8 @@ let GAGIM = (function() {
         ttl.to('#btnStep02', {duration: 0.5, alpha: 1, display:'flex', ease: 'ease', delay: 2});
 
 
-        ctl.to('#cBox', {height: '120%', duration: 1, delay: 2});
-        ctl.to('#cBox', {height: '0', duration: 1, delay: 4});
+        // ctl.to('#cBox', {height: '120%', duration: 1, delay: 2});
+        ctl.to('#cBox', {height: '0', duration: 1, delay: 7});
     }
     _public.motion03 = function () {
         txtTl.to('#mainTit', {duration: 0.5, text: '약속 시간에 맞춰<br>미션을 수행해요', ease: 'ease', delay: 0})
