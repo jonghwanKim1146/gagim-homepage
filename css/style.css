@@ -492,7 +492,7 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
   width: 100%;
   top: auto;
   bottom: 0;
-  padding-bottom: 56px;
+  padding-bottom: 30px;
 }
 .btn-box button, .btn-box a {
   display: none;
