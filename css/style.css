@@ -223,9 +223,7 @@ main .ani-box .con {
   overflow: hidden;
 }
 main .ani-box .con h1 {
-  position: fixed;
-  left: 10px;
-  top: 0;
+  margin-left: calc(50% - 51px);
   z-index: 3;
 }
 main .ani-box .con h1 a img {

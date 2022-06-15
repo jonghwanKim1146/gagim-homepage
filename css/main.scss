@@ -52,9 +52,8 @@ main {
       background: #FFF8DD;
       overflow: hidden;
       h1 {
-        position: fixed;
-        left: 10px;
-        top: 0;
+        //position: relative;
+        margin-left: calc(100% / 2 - 51px);
         z-index: 3;
         a {
           img {
