@@ -22,15 +22,16 @@
 </head>
 <body>
 <header>
-    <h1><a href="#"><img src="./images/ico_logo.png" alt="가는김애 로고"></a></h1>
+    <h1><a href="/"><img src="./images/ico_logo.png" alt="가는김애"></a></h1>
     <div class="store-box">
-        <a href="javascript:;" class="ios">애플스토어 가는김애 앱 다운로드</a>
-        <a href="javascript:;" class="ios">플레이스토어 가는김애 앱 다운로드</a>
+        <h2><a href="javascript:;" class="ios">애플스토어 가는김애 앱 다운로드</a></h2>
+        <h2><a href="javascript:;" class="ios">플레이스토어 가는김애 앱 다운로드</a></h2>
     </div>
 </header>
 <main>
     <div class="ani-box">
         <div class="con">
+            <h1><a href="/"><img src="./images/ico_logo.png" alt="가는김애"></a></h1>
             <div class="d-box" id="dBox">
                 <div class="d-con">
                     <div class="tit d" id="dTit"></div>
@@ -123,9 +124,9 @@
                 <div class="tit" id="mainTit"></div>
             </div>
             <div class="btn-box">
-                <button class="action" id="btnStep01" onclick="GAGIM.motion02()">알림확인하기</button>
+                <button class="action" id="btnStep01" onclick="GAGIM.motion02()">알림 확인하기</button>
                 <button class="action" id="btnStep02" onclick="GAGIM.motion03()">미션 수행하기</button>
-                <button class="action" id="btnStep03" onclick="GAGIM.run()">첫 미션 수행하기</button>
+                <a href="gagim://" class="action" id="btnStep03" onclick="GAGIM.run()">첫 미션 수행하기</a>
             </div>
         </div>
     </div>
@@ -140,9 +141,9 @@
     </div>
     <p class="copyright">Copyright© [Shop EV]. All Rights Reserved.</p>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
-
 <script src="./js/common.js"></script>
 </body>
 </html>

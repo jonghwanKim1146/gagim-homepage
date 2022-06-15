@@ -186,6 +186,9 @@ header h1 a img {
   width: auto;
   height: 50px;
 }
+header .store-box {
+  display: flex;
+}
 header .store-box a {
   display: inline-block;
   width: 188px;
@@ -219,6 +222,15 @@ main .ani-box .con {
   background: #FFF8DD;
   overflow: hidden;
 }
+main .ani-box .con h1 {
+  position: fixed;
+  left: 10px;
+  top: 0;
+  z-index: 3;
+}
+main .ani-box .con h1 a img {
+  height: 50px;
+}
 main .ani-box .con > div, main .ani-box .con .d-con, main .ani-box .con .c-con {
   position: absolute;
   left: 0;
@@ -240,7 +252,7 @@ main .ani-box .con > div.top, main .ani-box .con .d-con.top, main .ani-box .con 
   bottom: 0;
 }
 main .ani-box .con > div .d-con .tit, main .ani-box .con .d-con .d-con .tit, main .ani-box .con .c-con .d-con .tit {
-  top: 80px;
+  top: 100px;
 }
 main .ani-box .con > div .d-con .d-phone-box, main .ani-box .con .d-con .d-con .d-phone-box, main .ani-box .con .c-con .d-con .d-phone-box {
   position: absolute;
@@ -482,7 +494,7 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
   bottom: 0;
   padding-bottom: 56px;
 }
-.btn-box button {
+.btn-box button, .btn-box a {
   display: none;
   align-items: center;
   justify-content: center;
@@ -497,11 +509,11 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
   border-radius: 100px;
   opacity: 0;
 }
-.btn-box button.action {
+.btn-box button.action, .btn-box a.action {
   position: relative;
   overflow: hidden;
 }
-.btn-box button.action:before {
+.btn-box button.action:before, .btn-box a.action:before {
   position: absolute;
   content: "";
   display: inline-block;
@@ -547,7 +559,7 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
 .chat-box ul {
   position: absolute;
   width: 315px;
-  animation: scroll 20s linear;
+  animation: scroll 15s linear;
 }
 .chat-box ul li {
   margin-top: 30px;
@@ -658,10 +670,10 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
     transform: translateY(300px);
   }
   99% {
-    transform: translateY(-570px);
+    transform: translateY(-600px);
   }
   100% {
-    transform: translateY(-570px);
+    transform: translateY(-600px);
   }
 }
 
@@ -807,6 +819,9 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
     height: 700px;
     border-radius: 20px;
     filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.25));
+  }
+  main .ani-box .con h1 {
+    display: none;
   }
 }
 footer {

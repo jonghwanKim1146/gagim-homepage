@@ -16,6 +16,7 @@ header {
     }
   }
   .store-box {
+    display: flex;
     a {
       display: inline-block;
       width: 188px;
@@ -50,6 +51,17 @@ main {
       //min-height: 700px;
       background: #FFF8DD;
       overflow: hidden;
+      h1 {
+        position: fixed;
+        left: 10px;
+        top: 0;
+        z-index: 3;
+        a {
+          img {
+            height: 50px;
+          }
+        }
+      }
       > div, .d-con, .c-con {
         position: absolute;
         left: 0;
@@ -71,7 +83,7 @@ main {
         }
         .d-con {
           .tit {
-            top: 80px;
+            top: 100px;
           }
           .d-phone-box {
             position: absolute;
@@ -307,7 +319,7 @@ main {
   top: auto;
   bottom: 0;
   padding-bottom: 56px;
-  button {
+  button, a {
     display: none;
     align-items: center;
     justify-content: center;
@@ -362,7 +374,7 @@ main {
   ul {
     position: absolute;
     width: 315px;
-    animation: scroll 20s linear;
+    animation: scroll 15s linear;
     li {
       margin-top: 30px;
       &.lt {
@@ -496,10 +508,10 @@ main {
       transform: translateY(300px);
     }
     99% {
-      transform: translateY(-570px);
+      transform: translateY(-600px);
     }
     100% {
-      transform: translateY(-570px);
+      transform: translateY(-600px);
     }
   }
 }
@@ -629,6 +641,9 @@ main {
     height: calc(100vh - 120px - 260px);
     .ani-box {
       .con {
+        h1 {
+          display: none;
+        }
         width: 428px;
         height: 700px;
         border-radius: 20px;;
