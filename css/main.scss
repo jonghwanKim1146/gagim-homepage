@@ -28,7 +28,7 @@ header {
       &.android {
         margin-left: 40px;
         background: #fff url(../images/ico_playstore.png) no-repeat center center;
-        background-size: 129px 34px;
+        background-size: 143.79px 34px;
       }
     }
   }
@@ -41,7 +41,7 @@ header {
 main {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   height: 100vh;
   .ani-box {
     .con {
@@ -317,7 +317,7 @@ main {
   width: 100%;
   top: auto;
   bottom: 0;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   button, a {
     display: none;
     align-items: center;

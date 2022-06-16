@@ -106,7 +106,7 @@ caption {
 @font-face {
   font-family: "SCDream";
   src: url("../fonts/SCDream1.otf") format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: italic;
   font-weight: 100;
   font-stretch: normal;
@@ -114,7 +114,7 @@ caption {
 @font-face {
   font-family: "SCDream";
   src: url("../fonts/SCDream2.otf") format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: italic;
   font-weight: 200;
   font-stretch: normal;
@@ -122,7 +122,7 @@ caption {
 @font-face {
   font-family: "SCDream";
   src: url("../fonts/SCDream3.otf") format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: italic;
   font-weight: 300;
   font-stretch: normal;
@@ -130,7 +130,7 @@ caption {
 @font-face {
   font-family: "SCDream";
   src: url("../fonts/SCDream4.otf") format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: italic;
   font-weight: 400;
   font-stretch: normal;
@@ -138,7 +138,7 @@ caption {
 @font-face {
   font-family: "SCDream";
   src: url("../fonts/SCDream5.otf") format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: italic;
   font-weight: 500;
   font-stretch: normal;
@@ -146,7 +146,7 @@ caption {
 @font-face {
   font-family: "SCDream";
   src: url("../fonts/SCDream6.otf") format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: italic;
   font-weight: 600;
   font-stretch: normal;
@@ -154,7 +154,7 @@ caption {
 @font-face {
   font-family: "SCDream";
   src: url("../fonts/SCDream7.otf") format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: italic;
   font-weight: 700;
   font-stretch: normal;
@@ -162,7 +162,7 @@ caption {
 @font-face {
   font-family: "SCDream";
   src: url("../fonts/SCDream8.otf") format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: italic;
   font-weight: 800;
   font-stretch: normal;
@@ -170,7 +170,7 @@ caption {
 @font-face {
   font-family: "SCDream";
   src: url("../fonts/SCDream9.otf") format("opentype");
-  font-display: auto;
+  font-display: swap;
   font-style: italic;
   font-weight: 900;
   font-stretch: normal;
@@ -201,7 +201,7 @@ header .store-box a {
 header .store-box a.android {
   margin-left: 40px;
   background: #fff url(../images/ico_playstore.png) no-repeat center center;
-  background-size: 129px 34px;
+  background-size: 143.79px 34px;
 }
 
 @media all and (min-width: 961px) {
@@ -212,7 +212,7 @@ header .store-box a.android {
 main {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   height: 100vh;
 }
 main .ani-box .con {
@@ -490,7 +490,7 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
   width: 100%;
   top: auto;
   bottom: 0;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .btn-box button, .btn-box a {
   display: none;
