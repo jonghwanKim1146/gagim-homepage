@@ -25,7 +25,7 @@ header {
       background: #fff url(../images/ico_appstore.png) no-repeat center center;
       background-size: 129px 34px;
       text-indent: -3000em;
-      &:last-child {
+      &.android {
         margin-left: 40px;
         background: #fff url(../images/ico_playstore.png) no-repeat center center;
         background-size: 129px 34px;
@@ -41,7 +41,7 @@ header {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: 100vh;
   .ani-box {
     .con {
@@ -637,7 +637,7 @@ main {
     background-color: #FFD600;
   }
   main {
-    height: calc(100vh - 120px - 260px);
+    height: calc(100vh - 120px - 180px);
     .ani-box {
       .con {
         h1 {
@@ -666,7 +666,7 @@ footer {
   }
   div {
     font-weight: 200;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   .copyright {
     margin-top: 10px;
@@ -676,5 +676,8 @@ footer {
 @media all and (min-width: 961px) {
   footer {
     display: flex;
+  }
+  .mo {
+    display: none;
   }
 }

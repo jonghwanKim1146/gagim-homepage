@@ -198,7 +198,7 @@ header .store-box a {
   background-size: 129px 34px;
   text-indent: -3000em;
 }
-header .store-box a:last-child {
+header .store-box a.android {
   margin-left: 40px;
   background: #fff url(../images/ico_playstore.png) no-repeat center center;
   background-size: 129px 34px;
@@ -212,7 +212,7 @@ header .store-box a:last-child {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: 100vh;
 }
 main .ani-box .con {
@@ -810,7 +810,7 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
     background-color: #FFD600;
   }
   main {
-    height: calc(100vh - 120px - 260px);
+    height: calc(100vh - 120px - 180px);
   }
   main .ani-box .con {
     width: 428px;
@@ -837,7 +837,7 @@ footer p {
 }
 footer div {
   font-weight: 200;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 footer .copyright {
   margin-top: 10px;
@@ -847,6 +847,9 @@ footer .copyright {
 @media all and (min-width: 961px) {
   footer {
     display: flex;
+  }
+  .mo {
+    display: none;
   }
 }
 
