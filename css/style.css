@@ -223,8 +223,9 @@ main .ani-box .con {
   overflow: hidden;
 }
 main .ani-box .con h1 {
-  margin-left: calc(50% - 51px);
-  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 main .ani-box .con h1 a img {
   height: 50px;
@@ -274,7 +275,7 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
   position: relative;
   top: calc(50% - 117px);
   padding: 33px 0 0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 28px;
   line-height: 42px;
   align-items: center;
