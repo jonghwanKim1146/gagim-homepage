@@ -852,7 +852,7 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
     background-color: #FFD600;
   }
   main {
-    height: calc(100vh - 120px - 180px);
+    height: calc(100vh - 120px - 160px);
   }
   main .ani-box .con {
     width: 428px;
@@ -914,7 +914,7 @@ footer .mo {
 @media all and (min-width: 961px) {
   footer {
     display: flex;
-    padding: 35px 0;
+    padding: 35px 0 0;
   }
   .mo {
     display: none;
