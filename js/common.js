@@ -19,8 +19,8 @@ let GAGIM = (function() {
     _private.motion01 = function () {
         // text
         txtTl.to('#mainTit', {duration: 1.5, text: '당신의 모든 움직임을<br>가치있게', ease: 'ease'})
-        txtTl.to('#mainTit', {duration: 0.5, text: '상대방과 나의<br>동선이 겹치면', ease: 'ease', delay: 4.5})
-        txtTl.to('#mainTit', {duration: 1, text: '매칭이 되어<br>알림을 전송해요', ease: 'ease', delay: 4.5})
+        txtTl.to('#mainTit', {duration: 0, text: '상대방과 나의<br>동선이 겹치면', ease: 'ease', delay: 4.5})
+        txtTl.to('#mainTit', {duration: 1, text: '매칭이 되어<br>알림을 전송해요', ease: 'ease', delay: 5})
 
         // top
         ttl.to('#mainTit', {duration: 0.5, top: 15, ease: 'ease', delay: 2});
@@ -30,8 +30,8 @@ let GAGIM = (function() {
         ttl.to('#noti', {duration: 0.5, scale: 1, alpha: 1, ease: 'Back.easeOut'});
         ttl.to('#bag', {duration: 0.5, left: '50%', top: '50%', scale: 0.8, marginLeft: -85, ease: 'ease', delay: -1.5});
         ttl.to('#shadow', {duration: 1, scale: 1, alpha: 1, ease: 'Back.easeOut', delay: -1});
-        ttl.to('#notiSmallSpot', {duration: 0.5, y: 0, alpha: 1, ease: 'Back.easeOut', delay: 0.5});
-        ttl.to('#btnStep01', {duration: 0.5, alpha: 1, display:'flex', ease: 'ease', delay: 0});
+        ttl.to('#notiSmallSpot', {duration: 0.5, y: 0, alpha: 1, ease: 'Back.easeOut', delay: -0.5});
+        ttl.to('#btnStep01', {duration: 0.5, alpha: 1, display:'flex', ease: 'ease', delay: -0.5});
 
         // d-box
         dtl.to('#dtalk01', {duration: 0.5, alpha: 1, ease: 'ease', delay: 3});
@@ -66,23 +66,23 @@ let GAGIM = (function() {
         ttl.to('#chatBox', {duration: 1, autoAlpha: 1, display: 'block', ease: 'ease', delay: -0.6});
         ttl.to('#btnStep02', {duration: 0.5, alpha: 0, display:'none', ease: 'ease', delay: 2, oncomplete: _public.motion03});
 
-        ctl.to('#cBox', {height: '120%', duration: 1, delay: 3});
-        ctl.to('#cBox', {height: '0', duration: 1, delay: 3});
+        ctl.to('#cBox', {height: '120%', duration: 2, delay: 2.2});
+        ctl.to('#cBox', {height: '0', duration: 1, delay: 1.2});
     }
     _public.motion03 = function () {
-        txtTl.to('#mainTit', {duration: 0.5, text: '약속 시간에 맞춰<br>미션을 수행해요', ease: 'ease', delay: 1})
-        txtTl.to('#mainTit', {duration: 0.5, text: '미션 수행 후<br>사진으로 인증하면', ease: 'ease', delay: 5.5})
-        txtTl.to('#mainTit', {duration: 0.5, text: '에코코인이 지급되어요 :)', ease: 'ease', delay: 3.5})
+        txtTl.to('#mainTit', {duration: 0.5, text: '약속 시간에 맞춰<br>미션을 수행해요', ease: 'ease', delay: 0})
+        txtTl.to('#mainTit', {duration: 0.5, text: '미션 수행 후<br>사진으로 인증하면', ease: 'ease', delay: 4.5})
+        txtTl.to('#mainTit', {duration: 0.3, text: '에코코인이 지급되어요 :)', ease: 'ease', delay: 3.5})
 
         ttl.to('#btnStep02', {duration: 0.5, alpha: 0, display:'none', ease: 'ease', delay: -1.5});
-        ttl.to('#chatBox', {duration: 1, autoAlpha: 0, display: 'none', ease: 'ease', delay: 0.1});
-        ttl.to('#movBg', {duration: 1, autoAlpha: 1, display: 'block', ease: 'ease', delay: 0});
+        ttl.to('#chatBox', {duration: 1, autoAlpha: 0, display: 'none', ease: 'ease', delay: -0.5});
+        ttl.to('#movBg', {duration: 1, autoAlpha: 1, display: 'block', ease: 'ease', delay: -1});
         ttl.to('#movingBg', {duration: 1, autoAlpha: 1, display: 'block', ease: 'ease', delay: -1});
         ttl.to('#bag', {duration: 0.5, autoAlpha: 1, scale:1.2, display: 'block', ease: 'Back.easeOut', delay: -1});
         ttl.to('#movBox', {duration: 1, autoAlpha: 0, ease: 'ease', delay: 3});
         ttl.to('#yellowShadow', {duration: 0.3, autoAlpha:1, scale: 1, ease: 'Back.easeOut', delay: 1});
-        ttl.to('#bag', {duration: 0.5, x: 30, y: -30, scale:0.7, ease: 'ease', delay: -0.7});
-        ttl.to('#camera', {duration: 0.5, autoAlpha:1, ease: 'ease', delay: 0});
+        ttl.to('#bag', {duration: 0.5, x: 30, y: -30, scale:0.7, ease: 'ease', delay: -1.5});
+        ttl.to('#camera', {duration: 0.5, autoAlpha:1, ease: 'ease', delay: -1});
         ttl.to('#focus', {duration: 0.5, autoAlpha:1, scale: 1, ease: 'Back.easeOut', delay: 0});
         ttl.to('#cameraBag', {duration: 3, autoAlpha:1, ease: 'ease', delay: 0});
         ttl.to('#yellowShadow', {duration: 0.5, autoAlpha:0, ease: 'ease', delay: -1});
@@ -92,8 +92,8 @@ let GAGIM = (function() {
 
         // ctl.to('#cBox', {height: '0', duration: 1, delay: 0}); //임시
         ttl.to('#cBox', {height: '55%', duration: 0.5, delay: -1});
-        ttl.to('#moneyShadow', {duration: 0.3, autoAlpha:1, scale: 1, ease: 'Back.easeOut', delay: 0});
-        ttl.to('#bicMoney', {duration: 0.5, autoAlpha:1, y: 0, ease: 'Back.easeOut', delay: -0.5});
+        ttl.to('#moneyShadow', {duration: 0.3, autoAlpha:1, scale: 1, ease: 'Back.easeOut', delay: -0.5});
+        ttl.to('#bicMoney', {duration: 0.5, autoAlpha:1, scale: 1, ease: 'Back.easeOut', delay: -0.8});
         ttl.to('#btnStep03', {duration: 0.5, alpha: 1, display:'flex', ease: 'ease', delay: 0.2});
     }
     _public.run = function () {

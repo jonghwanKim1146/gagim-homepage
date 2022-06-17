@@ -816,7 +816,8 @@ main .ani-box .con > div .c-con .c-phone-box, main .ani-box .con .d-con .c-con .
   background: url(../images/money.png) no-repeat center center;
   background-size: 345px 293px;
   z-index: 3;
-  transform: translateY(-10px);
+  transform: scale(0);
+  transform-origin: 172px 293px;
   opacity: 0;
 }
 .money-box .money-shadow {

@@ -639,8 +639,10 @@ main {
     height: 293px;
     background: url(../images/money.png) no-repeat center center;
     background-size: 345px 293px;
+
     z-index: 3;
-    transform: translateY(-10px);
+    transform: scale(0);
+    transform-origin: 172px 293px;
     opacity: 0;
   }
   .money-shadow {
