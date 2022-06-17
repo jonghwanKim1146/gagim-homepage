@@ -1,4 +1,4 @@
-let GAGIM = (function() {
+const GAGIM = (function() {
     const _public = {};
     const _private = {};
     const ttl = gsap.timeline();
@@ -12,7 +12,6 @@ let GAGIM = (function() {
         console.log(md.mobile());
         console.log(md.os()); //iOS, AndroidOS
         console.log(md.phone());
-        // _public.motion03();
     }
     _private.eventHandler = function () {
     }
@@ -72,7 +71,7 @@ let GAGIM = (function() {
         ctl.to('#cBox', {height: '0', duration: 1, delay: 2.1});
         txtTl.to('#mainTit', {duration: 0.5, text: '약속 시간에 맞춰<br>미션을 수행해요', ease: 'ease', delay: 1.5})
         txtTl.to('#mainTit', {duration: 0.5, text: '미션 수행 후<br>사진으로 인증하면', ease: 'ease', delay: 4.5})
-        txtTl.to('#mainTit', {duration: 0.3, text: '에코코인이 지급되어요 :)', ease: 'ease', delay: 3.5})
+        txtTl.to('#mainTit', {duration: 0.3, text: '에코코인이 지급되어요 :)', ease: 'ease', delay: 2.5})
 
         ttl.to('#btnStep02', {duration: 0.5, alpha: 0, display:'none', ease: 'ease', delay: -1.5});
         ttl.to('#chatBox', {duration: 1, autoAlpha: 0, display: 'none', ease: 'ease', delay: 1});
