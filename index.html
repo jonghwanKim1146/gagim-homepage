@@ -27,8 +27,8 @@
 </head>
 <body>
 <header>
-    <h1><a href="/"><img src="./images/ico_logo.png" alt="가는김애"></a></h1>
-    <div class="store-box">
+    <h1><a href="https:www.wegoing.co.kr"><img src="./images/ico_logo.png" alt="가는김애"></a></h1>
+    <div class="store-box" style="display: none;">
         <h2><a href="javascript:;" class="ios">애플스토어 가는김애 앱 다운로드</a></h2>
         <h2><a href="javascript:;" class="android">플레이스토어 가는김애 앱 다운로드</a></h2>
     </div>
@@ -36,12 +36,12 @@
 <main>
     <div class="ani-box">
         <div class="con">
-            <h1><a href="/"><img src="./images/ico_logo.png" alt="가는김애"></a></h1>
+            <h1><a href="https:www.wegoing.co.kr"><img src="./images/ico_logo.png" alt="가는김애"></a></h1>
             <div class="d-box" id="dBox">
                 <div class="d-con">
-                    <div class="tit d" id="dTit"></div>
                     <div class="dtalk01" id="dtalk01"></div>
                     <div class="d-phone-box" id="dPhoneBox">
+                        <div class="dtalk02" id="dtalk02"></div>
                         <div class="phone d" id="dPhone"></div>
                         <div class="bic-spot" id="bicSpot"></div>
                         <div class="d-line-red" id="dLineRed"></div>
@@ -51,9 +51,9 @@
             </div>
             <div class="c-box" id="cBox">
                 <div class="c-con">
-                    <div class="tit" id="cTit"></div>
                     <div class="ctalk01" id="ctalk01"></div>
                     <div class="c-phone-box" id="cPhoneBox">
+                        <div class="ctalk02" id="ctalk02"></div>
                         <div class="phone" id="cPhone"></div>
                         <div class="c-line-red" id="cLineRed"></div>
                         <div class="small-bag" id="smallBag"></div>
@@ -129,20 +129,26 @@
                 <div class="tit" id="mainTit"></div>
             </div>
             <div class="btn-box">
-                <button class="action" id="btnStep01" onclick="GAGIM.motion02()">알림 확인하기</button>
+                <button class="action" id="btnStep01" onclick="GAGIM.motion02()">매칭 확인하기</button>
                 <button class="action" id="btnStep02" onclick="GAGIM.motion03()">미션 수행하기</button>
-                <a href="gagim://" class="action" id="btnStep03">첫 미션 수행하기</a>
+                <a href="gagim://" class="action" id="btnStep03">앱 다운받기</a>
             </div>
         </div>
     </div>
 </main>
 <footer>
-    <p>[주]이브이모빌리티</p>
+    <p><a href="http://www.evmobility.co.kr/">[주]이브이모빌리티</a></p>
+    <ul>
+        <li><a href="javascript:;" onclick="GAGIM.showTerms('service')">이용 약관</a></li>
+        <li><a href="javascript:;" onclick="GAGIM.showTerms('private')">개인정보 처리방침</a></li>
+        <li><a href="mailto:hi@evmobility.co.kr">제휴문의</a></li>
+    </ul>
     <div>
-        대표이사 김정근 | 사업자등록번호  : 103-33-3333 | 통신판매업 신고 : 제2008-서울강남-2198호 [사업자정보확인]<br>
+        대표이사 김정근 | 사업자등록번호  : 644-86-02189<br>
+        통신판매업 신고 : 제2022-서울강남-01355호 [사업자정보확인]<br>
         서울특별시 강남구 테헤란로34길 14 정인빌딩 402호 (우:06220)
     </div>
-    <p class="copyright">Copyright© [Shop EV]. All Rights Reserved.</p>
+    <p class="copyright">2022 All Rights Reserved.</p>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>

@@ -53,11 +53,11 @@ main {
       overflow: hidden;
       h1 {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 5px;
+        right: 10px;
         a {
           img {
-            height: 50px;
+            height: 35px;
           }
         }
       }
@@ -138,22 +138,46 @@ main {
 }
 .dtalk01 {
   position: absolute;
-  left: 10%;
-  top: per(165px);
+  left: 50%;
+  top: 50%;
   width: 240px;
   height: 109px;
+  margin-left: -140px;
+  margin-top: -197px;
   background: url(../images/d_talk01.png) no-repeat left top;
   background-size: 240px 109px;
   opacity: 0;
 }
 .ctalk01 {
   position: absolute;
-  right: 10%;
-  bottom: per(120px);
+  left: 50%;
+  top: 50%;
+  width: 236px;
+  height: 109px;
+  margin-left: -93px;
+  margin-top: 1px;
+  background: url(../images/c_talk01.png) no-repeat left top;
+  background-size: 236px 109px;
+  opacity: 0;
+}
+.dtalk02 {
+  position: absolute;
+  left: -40px;
+  top: -30px;
   width: 240px;
   height: 109px;
-  background: url(../images/c_talk01.png) no-repeat left top;
+  background: url(../images/d_talk02.png) no-repeat left top;
   background-size: 240px 109px;
+  opacity: 0;
+}
+.ctalk02 {
+  position: absolute;
+  left: -10px;
+  top: 110px;
+  width: 236px;
+  height: 109px;
+  background: url(../images/c_talk02.png) no-repeat left top;
+  background-size: 236px 109px;
   opacity: 0;
 }
 .phone {
@@ -167,7 +191,7 @@ main {
   transform: translateY(-10px);
   &.d {
     left: 0;
-    top: 20px;
+    top: 40px;
   }
 }
 .c-line-red {
@@ -365,7 +389,7 @@ main {
   top: 50%;
   display: none;
   width: 315px;
-  height: 400px;
+  height: 500px;
   margin-left: -156px;
   margin-top: -200px;
   overflow: hidden;
@@ -632,6 +656,20 @@ main {
     opacity: 0;
   }
 }
+.terms {
+  padding: 20px;
+  white-space: pre-wrap;
+  font-size: 12px;
+  line-height: 15px;
+  color: #CAA200;
+  overflow: hidden;
+  overflow-y: auto;
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
 @media all and (min-width: 961px) {
   body {
     background-color: #FFD600;
@@ -653,29 +691,59 @@ main {
 }
 
 footer {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 35px 0;
-  font-size: 10px;
+  padding: 20px 0 10px;
   line-height: 25px;
   color: #CAA200;
   text-align: center;
+  background-color: #FFD600;
   p {
-    font-weight: 600;
+    a {
+      font-size: 12px;
+      font-weight: 600;
+      color: #CAA200!important;
+    }
+  }
+  ul {
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      a {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 12px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #CAA200!important;
+      }
+    }
   }
   div {
     font-weight: 200;
     margin-top: 10px;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #CAA200;
   }
   .copyright {
     margin-top: 10px;
     font-weight: 200;
+    font-size: 10px;
+    color: #CAA200;
+  }
+  .mo {
+    display: block;
   }
 }
 @media all and (min-width: 961px) {
   footer {
     display: flex;
+    padding: 35px 0;
   }
   .mo {
     display: none;
