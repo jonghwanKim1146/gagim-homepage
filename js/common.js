@@ -6,12 +6,23 @@ const GAGIM = (function() {
     const ctl = gsap.timeline();
     const txtTl =  gsap.timeline();
     const md = new MobileDetect(navigator.userAgent);
+    const btnIOS = document.getElementsByClassName('btn-ios');
+    const btnAND = document.getElementsByClassName('btn-android');
     _public.init = function () {
         _private.eventHandler();
         _private.motion01();
         console.log(md.mobile());
         console.log(md.os()); //iOS, AndroidOS
         console.log(md.phone());
+        console.log(btnIOS);
+        if (md.os() === 'iOS') {
+            document.getElementsByClassName('btn-ios')[0].style.display ='block';
+        } else if (md.os() == 'AndroidOS') {
+            document.getElementsByClassName('btn-android')[0].style.display ='block';
+        } else {
+            document.getElementsByClassName('btn-ios')[0].style.display ='block';
+            document.getElementsByClassName('btn-android')[0].style.display ='block';
+        }
     }
     _private.eventHandler = function () {
     }
@@ -93,10 +104,11 @@ const GAGIM = (function() {
         ttl.to('#cBox', {height: '55%', duration: 0.5, delay: -1});
         ttl.to('#moneyShadow', {duration: 0.3, autoAlpha:1, scale: 1, ease: 'Back.easeOut', delay: -0.5});
         ttl.to('#bicMoney', {duration: 0.5, autoAlpha:1, scale: 1, ease: 'Back.easeOut', delay: -0.8});
-        ttl.to('#btnStep03', {duration: 0.5, alpha: 1, display:'flex', ease: 'ease', delay: 0.2});
-    }
-    _public.run = function () {
-        alert('7월 오픈예정입니다.');
+        if (md.os() === 'iOS') {
+            ttl.to('#btnStep03', {duration: 0.5, alpha: 1, display:'flex', ease: 'ease', delay: 0.2});
+        } else {
+            ttl.to('#btnStep04', {duration: 0.5, alpha: 1, display:'flex', ease: 'ease', delay: 0.2});
+        }
     }
     return _public;
 })();
