@@ -2,17 +2,17 @@
 /* Layout Style*/
 
 .mo {
-  display: block;
+  display: none;
 }
 .pc {
-  display: none;
+  display: block;
 }
 @media all and (min-width: 961px){
   .mo {
-    display: none;
+    display: block;
   }
   .pc {
-    display: block;
+    display: none;
   }
 }
 // header
