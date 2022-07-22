@@ -1023,8 +1023,6 @@ section.faq .inner .faq-box .list ul:first-child {
   margin-bottom: 15px;
 }
 section.faq .inner .faq-box .list ul li {
-  display: flex;
-  align-items: center;
   height: 80px;
   padding: 0 60px 0 20px;
   margin-top: 15px;
@@ -1037,6 +1035,12 @@ section.faq .inner .faq-box .list ul li {
 }
 section.faq .inner .faq-box .list ul li:first-child {
   margin-top: 0;
+}
+section.faq .inner .faq-box .list ul li a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .pop {

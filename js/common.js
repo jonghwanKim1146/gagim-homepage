@@ -28,18 +28,45 @@ const GAGIM = (function() {
     }
     _public.getFaq = function () {
         $.ajax({
-            url: 'https://goingdev.yesev.co.kr/api/common/notice/?page=1&type=N', // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
-            data: { page: 1, type: 'F'  },  // HTTP 요청과 함께 서버로 보낼 데이터
+            url: 'https://goingdev.yesev.co.kr/api/common/notice/?page=1&type=F', // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
             method: 'GET',   // HTTP 요청 메소드(GET, POST 등)
             dataType: 'json' // 서버에서 보내줄 데이터의 타입
         })
-            // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
             .done(function(data) {
-                console.log('faq=', data)
+                if (data.code === 0) {
+                    let el = '<ul>'
+                    let i = 0
+                    for (i; i < 5; i++) {
+                        el += '<li><a href="javascript:;" data-id="' + data.result[i].id + '">' + data.result[i].title + '</a></li>'
+                    }
+                    el += '</ul><ul>'
+                    for (i; i < 10; i++) {
+                        el += '<li><a href="javascript:;" data-id="' + data.result[i].id + '">' + data.result[i].title + '</a></li>'
+                    }
+                    el += '</ul>'
+                    $('#faqList').html(el)
+                    $('#faqList li a').on('click', function () {
+                        _public.getFaqDetail($(this).data('id'))
+                    })
+                }
             })
-            // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
             .fail(function(xhr, status, errorThrown) {
+                $('#faq').hide()
             })
+    }
+    _public.getFaqDetail = function (id) {
+            $.ajax({
+                url: 'https://goingdev.yesev.co.kr/api/common/notice/' + id + '/?type=F', // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
+                method: 'GET',   // HTTP 요청 메소드(GET, POST 등)
+                dataType: 'json' // 서버에서 보내줄 데이터의 타입
+            })
+                .done(function(data) {
+                    $('#faqTit').html(data.result.title)
+                    $('#faqCon').html(data.result.content)
+                    $('#pop').css('display', 'flex')
+                })
+                .fail(function(xhr, status, errorThrown) {
+                })
     }
     _private.motion01 = function () {
         // text
