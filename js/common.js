@@ -68,6 +68,10 @@ const GAGIM = (function() {
                 .fail(function(xhr, status, errorThrown) {
                 })
     }
+    _public.toScroll = function (id) {
+        const sc = $('#' + id).offset().top
+        $('html, body').animate({scrollTop: sc}, 300);
+    }
     _private.motion01 = function () {
         // text
         txtTl.to('#mainTit', {duration: 1.5, text: '당신의 모든 움직임을<br>가치있게', ease: 'ease'})
